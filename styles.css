@@ -1,0 +1,78 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 1%;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background: #e1e1e1;
+
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 100%;
+    background: #2c2a2a;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 74%;
+    height: 99%;
+    margin-left: 3%;
+    justify-content: center;
+}
+
+nav {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+
+    width: 50%;
+    border-radius: 50%;
+    border: 6px solid rgb(85, 82, 82);
+    margin-bottom: 5%;
+}
+
+a {
+    color: azure;
+    text-decoration: none;
+    margin: 4%;
+}
+
+h1 {
+
+    font-size: 60px;
+    width: 85%;
+}
+
+.iconscontact {
+
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-left: -4%;
+    background: #e2e1e1;
+    display: flex;
+
+}
+
+/* A ESTÉTICA DE UMA LISTA  ORDENADA POR LETRAS EM ELEMENTOS DE TEXTO É MUITO RUIM, ALÉM DE 
+FEIO PODE SE TONAR CONFUSO PARA O LEITOR, POR ISSO FIZ O QUE FOI PEDIDO, MAS SEM QUE O USUÁRIO VEJA*/
+ol {
+    font-size: 30px;
+    list-style: none;
+    margin-left: -4%;
+
+}
+ul{
+    font-size: 20px;
+}
