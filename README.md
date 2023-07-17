@@ -6,4 +6,6 @@
 <li> CONHECIMENTOS</li>
 <li>OBJETIVOS</li>
 </ul>
+ <p>Acesse o projeto em:</p><br>
+ <h3>https://yomarcos.github.io/F1_conclusao/</h3>
 <img style="position: relative; left: 0; top:15px;" src="https://www.feevale.br/Comum/midias/6a7f34d6-a1dc-4638-8565-e7b1592e483d.jpg">
