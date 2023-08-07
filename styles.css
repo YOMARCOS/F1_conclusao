@@ -2,10 +2,9 @@ body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 1%;
     display: flex;
-    width: 100%;
+    flex-wrap: wrap; /* Permite que os itens sejam ajustados em telas menores */
     height: 100vh;
     background: #e1e1e1;
-
 }
 
 aside {
@@ -14,6 +13,7 @@ aside {
     align-items: center;
     justify-content: center;
     width: 20%;
+    min-width: 250px; /* Define uma largura mínima para garantir que a barra lateral não fique muito pequena */
     height: 100%;
     background: #2c2a2a;
 }
@@ -22,21 +22,21 @@ main {
     display: flex;
     flex-direction: column;
     width: 74%;
+    min-width: 300px; /* Define uma largura mínima para a área de conteúdo principal */
     height: 99%;
     margin-left: 3%;
     justify-content: center;
 }
 
 nav {
-
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 img {
-
     width: 50%;
+    max-width: 200px; /* Limita a largura máxima da imagem */
     border-radius: 50%;
     border: 6px solid rgb(85, 82, 82);
     margin-bottom: 5%;
@@ -49,30 +49,52 @@ a {
 }
 
 h1 {
-
     font-size: 60px;
     width: 85%;
 }
 
 .iconscontact {
-
     display: flex;
     align-items: center;
     justify-content: start;
     margin-left: -4%;
     background: #e2e1e1;
     display: flex;
-
 }
 
-/* A ESTÉTICA DE UMA LISTA  ORDENADA POR LETRAS EM ELEMENTOS DE TEXTO É MUITO RUIM, ALÉM DE 
-FEIO PODE SE TONAR CONFUSO PARA O LEITOR, POR ISSO FIZ O QUE FOI PEDIDO, MAS SEM QUE O USUÁRIO VEJA*/
 ol {
     font-size: 30px;
     list-style: none;
     margin-left: -4%;
-
 }
-ul{
+
+ul {
     font-size: 20px;
+}
+
+/* Media Queries para Responsividade */
+
+/* Telas pequenas */
+@media screen and (max-width: 768px) {
+    aside {
+        width: 100%; /* Em telas menores, a barra lateral ocupa toda a largura */
+        min-width: 0;
+    }
+
+    main {
+        width: 100%; /* Em telas menores, o conteúdo principal ocupa toda a largura */
+        margin-left: 0;
+    }
+}
+
+/* Telas médias */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    aside {
+        width: 30%; /* Em telas médias, a barra lateral ocupa 30% da largura */
+    }
+
+    main {
+        width: 65%; /* Em telas médias, o conteúdo principal ocupa 65% da largura */
+        margin-left: 5%;
+    }
 }
